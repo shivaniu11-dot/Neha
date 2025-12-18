@@ -79,3 +79,17 @@ function sendPaymentWhatsApp() {
   const whatsappURL = `https://wa.me/917992044749?text=${message}`;
   window.open(whatsappURL, "_blank");
 }
+
+function toggleGallery() {
+  const gallery = document.getElementById("moreGallery");
+  const btn = document.getElementById("galleryBtn");
+
+  if (gallery.classList.contains("hidden")) {
+    gallery.classList.remove("hidden");
+    btn.textContent = "Show Less Photos";
+  } else {
+    gallery.classList.add("hidden");
+    btn.textContent = "View More Photos";
+  }
+}
+

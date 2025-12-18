@@ -72,3 +72,17 @@ blockquote{background:#0b0b0b;padding:16px;border-left:4px solid var(--gold);bor
   font-size: 0.9rem;
   color: #666;
 }
+
+.hidden {
+  display: none;
+}
+
+.gallery-toggle {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+#moreGallery {
+  transition: all 0.4s ease;
+}
+
