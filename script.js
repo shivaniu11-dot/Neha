@@ -51,3 +51,31 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 });
+
+function sendPaymentWhatsApp() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const service = document.getElementById("service").value;
+  const date = document.getElementById("date").value;
+  const amount = document.getElementById("amount").value;
+  const note = document.getElementById("note").value;
+
+  if (!name || !phone || !amount) {
+    alert("Please fill Name, Phone and Amount");
+    return;
+  }
+
+  const message =
+    `Hello Neha's Glam Studio,%0A%0A` +
+    `💄 *Payment Request* 💅%0A` +
+    `Name: ${name}%0A` +
+    `Phone: ${phone}%0A` +
+    `Service: ${service}%0A` +
+    `Date: ${date}%0A` +
+    `Amount: ₹${amount}%0A` +
+    `Message: ${note || "N/A"}%0A%0A` +
+    `Please share WhatsApp Pay / UPI payment link to complete the booking.`;
+
+  const whatsappURL = `https://wa.me/917992044749?text=${message}`;
+  window.open(whatsappURL, "_blank");
+}
