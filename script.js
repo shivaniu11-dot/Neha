@@ -93,3 +93,47 @@ function toggleGallery() {
   }
 }
 
+let currentIndex = 0;
+
+const images = [
+"bin/1 (2).jpg",
+"bin/1 (3).jpg",
+"bin/1 (4).jpg",
+"bin/1 (9).jpg",
+"bin/1 (10).jpg",
+"bin/1 (13).jpg",
+"bin/1 (1).jpg",
+"bin/1 (5).jpg",
+"bin/1 (6).jpg",
+"bin/1 (7).jpg",
+"bin/1 (8).jpg",
+"bin/1 (11).jpg",
+"bin/1 (12).jpg"
+];
+
+function openLightbox(index){
+currentIndex = index;
+
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src = images[index];
+}
+
+function closeLightbox(){
+document.getElementById("lightbox").style.display="none";
+}
+
+function changeImage(step){
+
+currentIndex += step;
+
+if(currentIndex < 0){
+currentIndex = images.length - 1;
+}
+
+if(currentIndex >= images.length){
+currentIndex = 0;
+}
+
+document.getElementById("lightbox-img").src = images[currentIndex];
+}
+
