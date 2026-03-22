@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Neha's Glam Studio — Makeup, Nails & Skin</title>
-  <meta name="description" content="Neha's Glam Studio — Premium bridal makeup, nails, hair styling and advanced skin treatments in Lucknow. Book now via WhatsApp." />
+  <meta name="description"
+    content="Neha's Glam Studio — Premium bridal makeup, nails, hair styling and advanced skin treatments in Lucknow. Book now via WhatsApp." />
   <meta name="keywords" content="makeup, bridal makeup, nails, hair, skin treatment, Neha's Glam Studio, Lucknow" />
   <link rel="icon" href="logo.png" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <div id="lightbox" class="lightbox">
@@ -29,7 +32,9 @@
       </div>
       <div class="contact-ctas">
         <a class="phone" href="tel:+917992044749">+91 79920 44749</a>
-        <a class="whatsapp" href="https://wa.me/917992044749?text=Hello%20Neha%27s%20Glam%20Studio%20I%20want%20to%20book%20a%20service" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="whatsapp"
+          href="https://wa.me/917992044749?text=Hello%20Neha%27s%20Glam%20Studio%20I%20want%20to%20book%20a%20service"
+          target="_blank" rel="noopener">Book on WhatsApp</a>
       </div>
     </div>
     <nav class="main-nav">
@@ -42,213 +47,238 @@
     </nav>
   </header>
 
-<main id="home">
-  <!-- Hero / Slider -->
-  <section class="hero">
-    <div class="slider" id="slider">
+  <main id="home">
+    <!-- Hero / Slider -->
+    <section class="hero">
+      <div class="slider" id="slider">
 
-      <!-- Slide 1 : Bridal -->
-      <div class="slide active" style="background-image:url('bin/bridal.png')">
-        <div class="slide-content">
-          <h2>Premium Bridal Makeup</h2>
-          <p>Customized looks for your special day — flawless & long-lasting.</p>
+        <!-- Slide 1 : Bridal -->
+        <div class="slide active" style="background-image:url('bin/bridal.png')">
+          <div class="slide-content">
+            <h2>Premium Bridal Makeup</h2>
+            <p>Customized looks for your special day — flawless & long-lasting.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Slide 2 : Nails -->
-      <div class="slide" style="background-image:url('bin/nail.png')">
-        <div class="slide-content">
-          <h2>Creative Nail Art</h2>
-          <p>Gel, acrylics and bespoke designs done hygienically.</p>
+        <!-- Slide 2 : Nails -->
+        <div class="slide" style="background-image:url('bin/nail.png')">
+          <div class="slide-content">
+            <h2>Creative Nail Art</h2>
+            <p>Gel, acrylics and bespoke designs done hygienically.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Slide 3 : Skin -->
-      <div class="slide" style="background-image:url('bin/skin.png')">
-        <div class="slide-content">
-          <h2>Advanced Skin Care</h2>
-          <p>Facials, skin polishing and organic treatments for glowing skin.</p>
+        <!-- Slide 3 : Skin -->
+        <div class="slide" style="background-image:url('bin/skin.png')">
+          <div class="slide-content">
+            <h2>Advanced Skin Care</h2>
+            <p>Facials, skin polishing and organic treatments for glowing skin.</p>
+          </div>
         </div>
-      </div>
 
-      <button class="slider-prev" aria-label="Previous">‹</button>
-      <button class="slider-next" aria-label="Next">›</button>
+        <button class="slider-prev" aria-label="Previous">‹</button>
+        <button class="slider-next" aria-label="Next">›</button>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Services -->
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <article class="service-card">
+        <h3>Makeup</h3>
+        <p>Bridal, engagement, party and photoshoot makeup. Premium products & hygiene.</p>
+        <a href="#booking" class="btn">Book Makeup</a>
+      </article>
+      <article class="service-card">
+        <h3>Nails</h3>
+        <p>Gel nails, extensions, acrylic art and long-lasting finishes.</p>
+        <a href="#booking" class="btn">Book Nails</a>
+      </article>
+      <article class="service-card">
+        <h3>Hair</h3>
+        <p>Styling, cuts, keratin and smoothening treatments by experienced stylists.</p>
+        <a href="#booking" class="btn">Book Hair</a>
+      </article>
+      <article class="service-card">
+        <h3>Skin Treatments</h3>
+        <p>Facials, cleanups, skin polishing and organic treatments tailored for you.</p>
+        <a href="#booking" class="btn">Book Skin Care</a>
+      </article>
     </div>
   </section>
-</main>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+      <img src="bin/1 (2).jpg" onclick="openLightbox(0)" class="gallery-img">
+      <img src="bin/1 (3).jpg" onclick="openLightbox(1)" class="gallery-img">
+      <img src="bin/1 (4).jpg" onclick="openLightbox(2)" class="gallery-img">
+      <img src="bin/1 (9).jpg" onclick="openLightbox(3)" class="gallery-img">
+      <img src="bin/1 (10).jpg" onclick="openLightbox(4)" class="gallery-img">
+    </div>
+
+    <div class="gallery-grid hidden" id="moreGallery">
+      <img src="bin/1 (13).jpg" onclick="openLightbox(5)" class="gallery-img">
+      <img src="bin/1 (1).jpg" onclick="openLightbox(6)" class="gallery-img">
+      <img src="bin/1 (5).jpg" onclick="openLightbox(7)" class="gallery-img">
+      <img src="bin/1 (6).jpg" onclick="openLightbox(8)" class="gallery-img">
+      <img src="bin/1 (7).jpg" onclick="openLightbox(9)" class="gallery-img">
+      <img src="bin/1 (8).jpg" onclick="openLightbox(10)" class="gallery-img">
+      <img src="bin/1 (11).jpg" onclick="openLightbox(11)" class="gallery-img">
+      <img src="bin/1 (12).jpg" onclick="openLightbox(12)" class="gallery-img">
+    </div>
+
+    <div class="gallery-toggle">
+      <button class="btn secondary" onclick="toggleGallery()" id="galleryBtn">
+        View More Photos
+      </button>
+    </div>
+  </section>
 
 
-    <!-- Services -->
-    <section id="services" class="section services">
-      <h2>Our Services</h2>
-      <div class="service-grid">
-        <article class="service-card">
-          <h3>Makeup</h3>
-          <p>Bridal, engagement, party and photoshoot makeup. Premium products & hygiene.</p>
-          <a href="#booking" class="btn">Book Makeup</a>
-        </article>
-        <article class="service-card">
-          <h3>Nails</h3>
-          <p>Gel nails, extensions, acrylic art and long-lasting finishes.</p>
-          <a href="#booking" class="btn">Book Nails</a>
-        </article>
-        <article class="service-card">
-          <h3>Hair</h3>
-          <p>Styling, cuts, keratin and smoothening treatments by experienced stylists.</p>
-          <a href="#booking" class="btn">Book Hair</a>
-        </article>
-        <article class="service-card">
-          <h3>Skin Treatments</h3>
-          <p>Facials, cleanups, skin polishing and organic treatments tailored for you.</p>
-          <a href="#booking" class="btn">Book Skin Care</a>
-        </article>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Makeup</h3>
+        <ul>
+          <li>Bridal Makeup – ₹XXXX</li>
+          <li>Party Makeup – ₹XXXX</li>
+          <li>Engagement – ₹XXXX</li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Gallery -->
-<section id="gallery" class="section gallery">
-  <h2>Gallery</h2>
-
-  <div class="gallery-grid">
-    <img src="bin/1 (2).jpg" onclick="openLightbox(0)" class="gallery-img">
-    <img src="bin/1 (3).jpg" onclick="openLightbox(1)" class="gallery-img">
-    <img src="bin/1 (4).jpg" onclick="openLightbox(2)" class="gallery-img">
-    <img src="bin/1 (9).jpg" onclick="openLightbox(3)" class="gallery-img">
-    <img src="bin/1 (10).jpg" onclick="openLightbox(4)" class="gallery-img">
-  </div>
-
-  <div class="gallery-grid hidden" id="moreGallery">
-    <img src="bin/1 (13).jpg" onclick="openLightbox(5)" class="gallery-img">
-    <img src="bin/1 (1).jpg" onclick="openLightbox(6)" class="gallery-img">
-    <img src="bin/1 (5).jpg" onclick="openLightbox(7)" class="gallery-img">
-    <img src="bin/1 (6).jpg" onclick="openLightbox(8)" class="gallery-img">
-    <img src="bin/1 (7).jpg" onclick="openLightbox(9)" class="gallery-img">
-    <img src="bin/1 (8).jpg" onclick="openLightbox(10)" class="gallery-img">
-    <img src="bin/1 (11).jpg" onclick="openLightbox(11)" class="gallery-img">
-    <img src="bin/1 (12).jpg" onclick="openLightbox(12)" class="gallery-img">
-  </div>
-
-  <div class="gallery-toggle">
-    <button class="btn secondary" onclick="toggleGallery()" id="galleryBtn">
-      View More Photos
-    </button>
-  </div>
-</section>
-
-
-
-    <!-- Pricing -->
-   <section id="pricing" class="section pricing">
-      <h2>Pricing</h2>
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Makeup</h3>
-          <ul>
-            <li>Bridal Makeup – ₹XXXX</li>
-            <li>Party Makeup – ₹XXXX</li>
-            <li>Engagement – ₹XXXX</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <h3>Hair</h3>
-          <ul>
-            <li>Keratin – ₹XXXX</li>
-            <li>Smoothening – ₹XXXX</li>
-            <li>Haircut – ₹XXXX</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <h3>Nails</h3>
-          <ul>
-            <li>Gel Nails – ₹XXXX</li>
-            <li>Nail Extensions – ₹XXXX</li>
-            <li>Acrylic Art – ₹XXXX</li>
-          </ul>
-        </div>
-        <div class="pricing-card">
-          <h3>Skin Care</h3>
-          <ul>
-            <li>Facial – ₹XXXX</li>
-            <li>Cleanup – ₹XXXX</li>
-            <li>Skin Polishing – ₹XXXX</li>
-          </ul>
-        </div>
+      <div class="pricing-card">
+        <h3>Hair</h3>
+        <ul>
+          <li>Keratin – ₹XXXX</li>
+          <li>Smoothening – ₹XXXX</li>
+          <li>Haircut – ₹XXXX</li>
+        </ul>
       </div>
-    </section>
+      <div class="pricing-card">
+        <h3>Nails</h3>
+        <ul>
+          <li>Gel Nails – ₹XXXX</li>
+          <li>Nail Extensions – ₹XXXX</li>
+          <li>Acrylic Art – ₹XXXX</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>Skin Care</h3>
+        <ul>
+          <li>Facial – ₹XXXX</li>
+          <li>Cleanup – ₹XXXX</li>
+          <li>Skin Polishing – ₹XXXX</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- Booking -->
-    <section id="booking" class="section booking">
-      <h2>Online Booking</h2>
-      <form id="bookingForm" class="booking-form">
-        <label for="name">Full name</label>
-        <input id="name" name="name" required />
+  <!-- Booking -->
+  <section id="booking" class="section booking">
+    <h2>Online Booking</h2>
+    <form id="bookingForm" class="booking-form">
+      <label for="name">Full name</label>
+      <input id="name" name="name" required />
 
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" required />
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" required />
 
-        <label for="service">Service</label>
-        <select id="service" name="service">
-          <option>Makeup</option>
-          <option>Nails</option>
-          <option>Hair</option>
-          <option>Skin Treatment</option>
-        </select>
-        
-        <label for="amount">Amount (₹)</label>
-        <input id="amount" name="amount" type="number" required />
-        
-        <label for="date">Preferred date</label>
-        <input id="date" name="date" type="date" />
+      <label for="service">Service</label>
+      <select id="service" name="service">
+        <option>Makeup</option>
+        <option>Nails</option>
+        <option>Hair</option>
+        <option>Skin Treatment</option>
+      </select>
 
-        <label for="note">Message (optional)</label>
-        <textarea id="note" name="note" rows="3"></textarea>
+      <label for="amount">Amount (₹)</label>
+      <input id="amount" name="amount" type="number" required />
 
-        <button type="submit" class="btn large">Send Booking via WhatsApp</button>
-      </form>
+      <label for="date">Preferred date</label>
+      <input id="date" name="date" type="date" />
 
-     <div class="payment">
+      <label for="note">Message (optional)</label>
+      <textarea id="note" name="note" rows="3"></textarea>
+
+      <button type="submit" class="btn large">Send Booking via WhatsApp</button>
+    </form>
+
+    <div class="payment">
       <h3>Pay & Confirm Booking</h3>
       <p>
-      After submitting your booking details, you can pay securely via
-      <strong>WhatsApp Pay / UPI</strong>.
+        After submitting your booking details, you can pay securely via
+        <strong>WhatsApp Pay / UPI</strong>.
       </p>
       <p class="muted">
-      Click the button below to send a payment request on WhatsApp. Our team will
-      share the payment link or QR code to confirm your appointment.
+        Click the button below to send a payment request on WhatsApp. Our team will
+        share the payment link or QR code to confirm your appointment.
       </p>
 
       <button type="button" class="btn large secondary" onclick="sendPaymentWhatsApp()">
-      Pay via WhatsApp / UPI
+        Pay via WhatsApp / UPI
       </button>
-      </div>
+    </div>
 
-    </section> 
+  </section>
 
-    <!-- Testimonials -->
-    <section class="section testimonials">
-      <h2>Client Reviews</h2>
-      <div class="test-grid">
-        <blockquote>“Amazing makeup! Perfect for my engagement. Highly recommended.”</blockquote>
-        <blockquote>“Great nail work. Very professional and hygienic.”</blockquote>
-        <blockquote>“Loved the hair smoothening result. Value for money.”</blockquote>
-      </div>
-    </section>
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <h2>Client Reviews</h2>
+    <div class="test-grid">
+      <blockquote>“Amazing makeup! Perfect for my engagement. Highly recommended.”</blockquote>
+      <blockquote>“Great nail work. Very professional and hygienic.”</blockquote>
+      <blockquote>“Loved the hair smoothening result. Value for money.”</blockquote>
+    </div>
+  </section>
 
-    <!-- Contact / Location -->
-    <section id="contact" class="section contact">
-      <h2>Contact & Location</h2>
-      <p class="muted">Mati, Deva Road, Barabanki, Uttar Pradesh</p>
-      <p><strong>Phone:</strong> <a href="tel:+917992044749">+91 79920 44749</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/917992044749">Chat on WhatsApp</a></p>
-      <div class="map-wrap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.8665291715415!2d81.07093577544022!3d26.93426657663437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399959097eab60a7%3A0xdf70488c57317b1c!2sNeha&#39;s%20Glam%20Studio!5e1!3m2!1sen!2sin!4v1773163178791!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <footer class="site-footer">
-        <p>© 2025 Neha's Glam Studio — All rights reserved.</p>
-      </footer>
-    </section>
+  <!-- Contact / Location -->
+  <section id="contact" class="section contact">
+    <h2>Contact & Location</h2>
+    <p class="muted">Mati, Deva Road, Barabanki, Uttar Pradesh</p>
+    <p class="contact-item">
+      <a href="tel:+917992044749">
+        <i class="fas fa-phone"></i> +91-7992044749
+      </a>
+    </p>
+
+    <p class="contact-item">
+      <a href="https://wa.me/917992044749" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </p>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.8665291715415!2d81.07093577544022!3d26.93426657663437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399959097eab60a7%3A0xdf70488c57317b1c!2sNeha&#39;s%20Glam%20Studio!5e1!3m2!1sen!2sin!4v1773163178791!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/nehasglamstudio?igsh=eG84dnY2NmJudGlr&utm_source=qr" target="_blank"
+        class="instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/share/18EiuD6s6T/?mibextid=wwXIfr" target="_blank" class="facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/neha-s-glam-studio/" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <footer class="site-footer">
+      <p>© 2025 Neha's Glam Studio — All rights reserved.</p>
+    </footer>
+  </section>
   </main>
 
   <script src="script.js"></script>
 </body>
+
 </html>

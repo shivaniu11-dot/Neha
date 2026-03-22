@@ -132,3 +132,60 @@ blockquote{background:#0b0b0b;padding:16px;border-left:4px solid var(--gold);bor
   right:30px;
 }
 
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  font-size: 32px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Brand Colors */
+.social-icons a.instagram i {
+  color: #E1306C; /* Instagram */
+}
+
+.social-icons a.facebook i {
+  color: #1877F2; /* Facebook */
+}
+
+.social-icons a.linkedin i {
+  color: #0A66C2; /* LinkedIn */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.contact-item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ddd;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.contact-item i {
+  font-size: 18px;
+}
+
+/* Colors */
+.contact-item .fa-phone {
+  color: #4CAF50; /* green */
+}
+
+.contact-item .fa-whatsapp {
+  color: #25D366; 
+  font-size: 25px;
+}
+
+.contact-item a:hover {
+  color: #fff;
+}
+
